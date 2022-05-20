@@ -1,0 +1,23 @@
+package algori;
+
+import java.util.Scanner;
+
+public class SumString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		int inputNum = scanner.nextInt();
+		String strings[] = new String[inputNum+1]; 
+		for(int index = 0; index <= inputNum; index++) {
+			String inputString = scanner.nextLine();
+			strings[index] = inputString;
+		}
+		System.out.print("Hello ");
+		System.out.print(strings[0]);
+		for(int j = 1; j <= inputNum - 1; j++) {
+			System.out.print(strings[j] + ",");
+		} System.out.println(strings[inputNum]);
+	}
+
+}
